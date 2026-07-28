@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大记特记｜隐私政策</title>
+    <meta name="description" content="大记特记的隐私与数据使用说明。">
+    <style>
+      :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; }
+      body { margin: 0; background: #f6f6fb; color: #202124; line-height: 1.75; }
+      main { max-width: 760px; margin: 0 auto; padding: 56px 24px 88px; }
+      a { color: #1d5bd6; font-weight: 650; }
+      h1 { margin: 16px 0 8px; font-size: clamp(34px, 7vw, 50px); letter-spacing: -0.04em; line-height: 1.1; }
+      h2 { margin: 42px 0 10px; font-size: 22px; }
+      .meta { color: #6d7078; }
+      .card { margin-top: 22px; padding: 24px; border: 1px solid #e8e8ee; border-radius: 20px; background: #fff; box-shadow: 0 12px 36px rgba(31, 35, 47, .06); }
+      footer { margin-top: 56px; color: #777b84; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="index.html">← 大记特记支持中心</a>
+      <h1>隐私政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 28 日</p>
+
+      <section class="card">
+        <p>大记特记重视你的隐私。本政策说明 App 在你使用记账、汇率与可选 AI 功能时如何处理数据。</p>
+      </section>
+
+      <h2>1. 账本与设备数据</h2>
+      <p>金额、币种、分类、时间、备注和记录时汇率保存在设备的本地账本中。CloudKit 能力可用时，账本数据与币种偏好可写入你的私有 iCloud 数据库；不可用时，App 会显示仅本机状态。</p>
+
+      <h2>2. 语音与截图</h2>
+      <p>麦克风仅在你主动发起语音输入时请求使用。截图通过 iOS 系统选择器导入。语音转写与截图文字识别在设备端进行；原始录音和截图不会发送给 AI 服务商。</p>
+
+      <h2>3. 可选 AI 服务</h2>
+      <p>你可以选择托管 AI，或使用自己的 GLM API Key。托管模式会把你主动提交给 AI 处理的文字发送至大记特记后端，再调用 AI 服务；GLM Key 模式会从设备直接向智谱 GLM 官方接口发送待处理文字。你的 GLM API Key 仅保存在当前设备的 Keychain，不写入 iCloud、账本、日志或产品分析。</p>
+      <p>为提供托管 AI 服务及防滥用，后端会处理匿名安装标识、安全校验与会话信息、请求限额信息，以及 AI 响应结果。我们不在运行日志中记录完整账目内容、输入文字、提示词、原始截图、原始录音或 API Key。</p>
+
+      <h2>4. 汇率</h2>
+      <p>外币账目需要自动换算时，App 会向欧洲中央银行（ECB）汇率接口发送原币种、目标币种和账目日期。请求不包含金额、分类、备注、媒体、AI 输入文字或 API Key。汇率结果及查询审计信息会作为记录时快照保存，历史账目不会按最新汇率重算。</p>
+
+      <h2>5. 产品分析与通知</h2>
+      <p>产品分析默认关闭。你主动开启后，App 仅记录固定的非账目内容事件；账目内容、输入文本、媒体和 API Key 不会用于产品分析。通知详细内容默认关闭；关闭时，通知不包含金额、币种、分类、备注或输入原文。</p>
+
+      <h2>6. 你的控制权</h2>
+      <p>你可以在 App 设置中删除本机保存的 GLM API Key、关闭产品分析、导出 CSV 或清空账本。有关支持问题，请通过 <a href="https://github.com/GaryChow-LGTM/dajiteji-support/issues/new/choose">支持请求</a> 联系我们；请勿在问题中提交 API Key、完整账目或其他敏感信息。</p>
+
+      <h2>7. 政策更新</h2>
+      <p>如本政策发生重大变化，我们会在本页面更新生效日期。</p>
+
+      <footer>© 2026 Yimin Cao. 大记特记。</footer>
+    </main>
+  </body>
+</html>
